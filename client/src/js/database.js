@@ -55,7 +55,7 @@ export const getDb = async () => {
     // This provides confirmation of the request
     const result = await request;
     console.log(result);
-    return result;
+    return result?.value;
 
   } catch (err) {
   console.error('getDb not implemented');
